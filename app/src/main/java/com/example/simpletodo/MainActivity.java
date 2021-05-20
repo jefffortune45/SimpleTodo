@@ -40,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnAdd=(Button)findViewById(R.id.btnAdd);
-        etItem=(EditText)findViewById(R.id.etItem);
-        rvItems=(RecyclerView) findViewById(R.id.rvItems);
+        btnAdd= findViewById(R.id.btnAdd);
+        etItem= findViewById(R.id.etItem);
+        rvItems= findViewById(R.id.rvItems);
         LoadItems();
 
         ItemsAdapter.OnLongClickListener onLongClickListener = new ItemsAdapter.OnLongClickListener(){
@@ -84,8 +84,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-
     @SuppressLint("MissingSuperCall")
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
